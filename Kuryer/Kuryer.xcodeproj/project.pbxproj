@@ -31,6 +31,7 @@
 		2CC20EDF2B0B598B00050941 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC20EDE2B0B598B00050941 /* MainTableViewCell.swift */; };
 		2CC20EE12B0B5E4F00050941 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC20EE02B0B5E4F00050941 /* TableHeaderView.swift */; };
 		2CC20EE32B0B6BE200050941 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC20EE22B0B6BE200050941 /* MapVC.swift */; };
+		2CC20EE82B0B804A00050941 /* YBaseMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC20EE72B0B804A00050941 /* YBaseMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		2CC20EDE2B0B598B00050941 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		2CC20EE02B0B5E4F00050941 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		2CC20EE22B0B6BE200050941 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		2CC20EE72B0B804A00050941 /* YBaseMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC20EE22B0B6BE200050941 /* MapVC.swift */,
+				2CC20EE72B0B804A00050941 /* YBaseMapView.swift */,
 			);
 			path = MapScreen;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				2CC20EDA2B0B568C00050941 /* Constants.swift in Sources */,
 				2CC20EA82B0B506900050941 /* SceneDelegate.swift in Sources */,
 				2CC20ED32B0B549600050941 /* MainScreenVC.swift in Sources */,
+				2CC20EE82B0B804A00050941 /* YBaseMapView.swift in Sources */,
 				2CC20EDD2B0B583700050941 /* MainVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +401,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85YCKA99M8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kuryer/YandexMapsMobile",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = Kuryer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -410,6 +419,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nikita.Kuryer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -426,7 +436,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85YCKA99M8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kuryer/YandexMapsMobile",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = Kuryer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -439,6 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nikita.Kuryer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
