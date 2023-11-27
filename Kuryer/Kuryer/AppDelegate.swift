@@ -7,7 +7,6 @@
 
 import UIKit
 import FirebaseCore
-import YandexMapsMobile
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

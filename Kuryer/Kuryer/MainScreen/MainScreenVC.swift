@@ -91,7 +91,7 @@ extension MainScreenVC: UITableViewDelegate {
         let alert = UIAlertController(title: "Вы хотите взять данный заказ на выполнение", message: nil, preferredStyle: .alert)
          
         alert.addAction(UIAlertAction(title: "Да", style: .default) { _ in
-            let vc = MapVC()
+            let vc = AppleMapVC()
             self.navigationController?.pushViewController(vc, animated: false)
         })
         alert.addAction(UIAlertAction(title: "Нет", style: .cancel) { _ in
